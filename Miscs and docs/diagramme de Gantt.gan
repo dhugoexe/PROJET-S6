@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?><project name="Projet Alerter" company="" webLink="http://" view-date="2023-04-03" view-index="1" gantt-divider-location="417" resource-divider-location="403" version="3.2.3230" locale="fr_FR">
+    <description/>
+    <view zooming-state="default:6" id="gantt-chart">
+        <field id="tpd3" name="Nom" width="275" order="0"/>
+        <field id="tpd4" name="Date de début" width="66" order="1"/>
+        <field id="tpd5" name="Date de fin" width="60" order="2"/>
+        <option id="filter.completedTasks" value="false"/>
+        <option id="color.recent">
+            <![CDATA[#6666ff #0099ff #ff6600 #ffcc00 #f4f4f4 #00cc66 #ff3333]]>
+        </option>
+    </view>
+    <view id="resource-table">
+        <field id="0" name="Nom" width="251" order="0"/>
+        <field id="1" name="Rôle par défaut" width="133" order="1"/>
+    </view>
+    <!-- -->
+    <calendars>
+        <day-types>
+            <day-type id="0"/>
+            <day-type id="1"/>
+            <default-week id="1" name="default" sun="1" mon="0" tue="0" wed="0" thu="0" fri="0" sat="1"/>
+            <only-show-weekends value="false"/>
+            <overriden-day-types/>
+            <days/>
+        </day-types>
+    </calendars>
+    <tasks empty-milestones="true">
+        <taskproperties>
+            <taskproperty id="tpd0" name="type" type="default" valuetype="icon"/>
+            <taskproperty id="tpd1" name="priority" type="default" valuetype="icon"/>
+            <taskproperty id="tpd2" name="info" type="default" valuetype="icon"/>
+            <taskproperty id="tpd3" name="name" type="default" valuetype="text"/>
+            <taskproperty id="tpd4" name="begindate" type="default" valuetype="date"/>
+            <taskproperty id="tpd5" name="enddate" type="default" valuetype="date"/>
+            <taskproperty id="tpd6" name="duration" type="default" valuetype="int"/>
+            <taskproperty id="tpd7" name="completion" type="default" valuetype="int"/>
+            <taskproperty id="tpd8" name="coordinator" type="default" valuetype="text"/>
+            <taskproperty id="tpd9" name="predecessorsr" type="default" valuetype="text"/>
+        </taskproperties>
+        <task id="2" name="Projet Alerter" color="#ff3333" meeting="false" start="2023-04-06" duration="44" complete="0" thirdDate="2023-04-10" thirdDate-constraint="0" expand="true"/>
+        <task id="3" name="Réflexion et documentation" color="#ff6600" meeting="false" start="2023-04-06" duration="1" complete="0" thirdDate="2023-03-27" thirdDate-constraint="0" expand="true">
+            <notes>
+                <![CDATA[choix du mode de communication
+choix des composants 
+]]>
+            </notes>
+        </task>
+        <task id="1" name="Schéma d'architecture" color="#ff6600" meeting="false" start="2023-04-13" duration="3" complete="0" thirdDate="2023-04-10" thirdDate-constraint="0" expand="true"/>
+        <task id="0" name="Diagramme de Gantt" color="#ff6600" meeting="false" start="2023-04-13" duration="3" complete="0" thirdDate="2023-04-10" thirdDate-constraint="0" priority="2" expand="true"/>
+        <task id="15" name="Communication entre STM32 et écran LCD" color="#0099ff" meeting="false" start="2023-04-13" duration="4" complete="0" thirdDate="2023-04-13" thirdDate-constraint="0" expand="true"/>
+        <task id="4" name="Validation des caractéristiques de la carte de transmission" color="#6666ff" meeting="false" start="2023-04-18" duration="3" complete="0" thirdDate="2023-03-27" thirdDate-constraint="0" expand="true">
+            <depend id="5" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="5" name="Commander le module de tansmission" color="#ff6600" meeting="false" start="2023-04-21" duration="1" complete="0" thirdDate="2023-03-27" thirdDate-constraint="0" expand="true">
+            <notes>
+                <![CDATA[à faire si les caractéristiques de Radiostation click sont validées]]>
+            </notes>
+        </task>
+        <task id="6" name="Faire montage pour premier test le module de transmission" color="#6666ff" meeting="false" start="2023-05-09" duration="3" complete="0" thirdDate="2023-05-09" thirdDate-constraint="0" expand="true"/>
+        <task id="10" name="Programmation de STM32 pour tester montage" color="#0099ff" meeting="false" start="2023-04-18" duration="21" complete="0" thirdDate="2023-05-11" thirdDate-constraint="0" expand="true"/>
+        <task id="8" name="Conception PCB" color="#00cc66" meeting="false" start="2023-04-18" duration="18" complete="0" thirdDate="2023-04-03" thirdDate-constraint="0" expand="true">
+            <notes>
+                <![CDATA[schéma + routage
+à compléter au fur et à mesure]]>
+            </notes>
+            <depend id="9" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="9" name="Impression de PCB + montage" color="#00cc66" meeting="false" start="2023-05-12" duration="3" complete="0" thirdDate="2023-05-11" thirdDate-constraint="0" expand="true"/>
+        <task id="17" name="Vérification des performances" color="#ff6600" meeting="false" start="2023-05-16" duration="1" complete="0" thirdDate="2023-05-16" thirdDate-constraint="0" expand="true"/>
+        <task id="12" name="Test module GPS seul" color="#0099ff" meeting="false" start="2023-05-16" duration="6" complete="0" thirdDate="2023-05-23" thirdDate-constraint="0" expand="true">
+            <depend id="13" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="13" name="Rassembler GPS et radio" color="#6666ff" meeting="false" start="2023-05-24" duration="7" complete="0" thirdDate="2023-04-03" thirdDate-constraint="0" expand="true">
+            <depend id="14" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="11" name="Conception d'un support" color="#6666ff" meeting="false" start="2023-05-30" duration="3" complete="0" thirdDate="2023-05-23" thirdDate-constraint="0" expand="true"/>
+        <task id="14" name="Vérification des performances" color="#ff6600" meeting="false" start="2023-06-02" duration="2" complete="0" thirdDate="2023-06-01" thirdDate-constraint="0" expand="true"/>
+    </tasks>
+    <resources>
+        <resource id="0" name="Charlotte " function="Default:1" contacts="charlotte.fricot@ensea.fr" phone=""/>
+        <resource id="1" name="Mamour" function="2" contacts="mamour.sarr@ensea.fr" phone=""/>
+        <resource id="2" name="Hugo" function="3" contacts="hugo.devaux@ensea.fr" phone=""/>
+        <resource id="3" name="Issa" function="3" contacts="issa.abdelhafiz@ensea.fr" phone=""/>
+        <resource id="4" name="Laël" function="4" contacts="lael.bitaud--canoen@ensea.fr" phone=""/>
+    </resources>
+    <allocations>
+        <allocation task-id="3" resource-id="0" function="Default:1" responsible="false" load="100.0"/>
+        <allocation task-id="1" resource-id="0" function="Default:1" responsible="false" load="100.0"/>
+        <allocation task-id="0" resource-id="0" function="Default:1" responsible="true" load="100.0"/>
+        <allocation task-id="4" resource-id="0" function="Default:1" responsible="false" load="100.0"/>
+        <allocation task-id="5" resource-id="0" function="Default:1" responsible="true" load="100.0"/>
+        <allocation task-id="10" resource-id="0" function="Default:1" responsible="false" load="100.0"/>
+        <allocation task-id="17" resource-id="0" function="Default:1" responsible="false" load="100.0"/>
+        <allocation task-id="14" resource-id="0" function="Default:1" responsible="true" load="100.0"/>
+        <allocation task-id="13" resource-id="0" function="Default:1" responsible="false" load="100.0"/>
+        <allocation task-id="3" resource-id="1" function="2" responsible="false" load="100.0"/>
+        <allocation task-id="1" resource-id="1" function="2" responsible="false" load="100.0"/>
+        <allocation task-id="0" resource-id="1" function="2" responsible="false" load="100.0"/>
+        <allocation task-id="4" resource-id="1" function="2" responsible="false" load="100.0"/>
+        <allocation task-id="8" resource-id="1" function="2" responsible="true" load="100.0"/>
+        <allocation task-id="6" resource-id="1" function="2" responsible="false" load="100.0"/>
+        <allocation task-id="12" resource-id="1" function="2" responsible="false" load="100.0"/>
+        <allocation task-id="3" resource-id="2" function="3" responsible="false" load="100.0"/>
+        <allocation task-id="15" resource-id="2" function="3" responsible="false" load="100.0"/>
+        <allocation task-id="10" resource-id="2" function="3" responsible="true" load="100.0"/>
+        <allocation task-id="13" resource-id="2" function="3" responsible="false" load="100.0"/>
+        <allocation task-id="3" resource-id="3" function="3" responsible="false" load="100.0"/>
+        <allocation task-id="15" resource-id="3" function="3" responsible="false" load="100.0"/>
+        <allocation task-id="10" resource-id="3" function="3" responsible="true" load="100.0"/>
+        <allocation task-id="11" resource-id="3" function="3" responsible="true" load="100.0"/>
+        <allocation task-id="12" resource-id="3" function="3" responsible="false" load="100.0"/>
+        <allocation task-id="3" resource-id="4" function="4" responsible="false" load="100.0"/>
+        <allocation task-id="13" resource-id="4" function="4" responsible="false" load="100.0"/>
+        <allocation task-id="4" resource-id="4" function="4" responsible="true" load="100.0"/>
+        <allocation task-id="1" resource-id="4" function="4" responsible="false" load="100.0"/>
+        <allocation task-id="8" resource-id="4" function="4" responsible="false" load="100.0"/>
+        <allocation task-id="6" resource-id="4" function="4" responsible="false" load="100.0"/>
+        <allocation task-id="17" resource-id="4" function="4" responsible="false" load="100.0"/>
+        <allocation task-id="14" resource-id="4" function="4" responsible="false" load="100.0"/>
+    </allocations>
+    <vacations/>
+    <previous/>
+    <roles roleset-name="Default"/>
+    <roles>
+        <role id="1" name="Chef de projet"/>
+        <role id="2" name="Responsable hardware"/>
+        <role id="3" name="Responsable software"/>
+        <role id="4" name="Responsable intégration"/>
+    </roles>
+</project>
